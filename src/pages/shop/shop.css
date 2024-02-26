@@ -1,0 +1,89 @@
+.shop {
+  width: 100%;
+}
+.shopTitle {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .products {
+    width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 3em 1em 2em 1em;
+  }
+  
+  .product {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+    background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    padding: 2em 0;
+  }
+  
+  .product img {
+    width: 300px;
+  }
+  
+  .product .description {
+    text-align: center;
+  }
+  
+  .product:hover {
+    transition: 0.3s ease-in;
+    cursor: pointer;
+  }
+  
+  .addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+  
+  .addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 769px) {
+    .products {
+      display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1em;
+  padding: 0 1em;
+  padding-top: 3em;
+  margin: 0 auto;
+    }
+    .product{
+      width: 100%;
+    } 
+  }
+
+  @media screen and (min-width: 1024px) {
+    .products {
+      margin: 0 auto;
+      display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  padding-top: 3em;
+    }
+    .product{
+      width: 100%;
+    } 
+    .product img {
+      width: 200px;
+    }
+  }

@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  --text-color: #212529;
+  --font-family: "Nunito Sans", sans-serif;
+  
+}
+
+
+html {
+  font-size: 16px; 
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+}
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+.App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+}
+  
